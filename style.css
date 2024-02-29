@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-pink:hsl(275, 100%, 97%);
+    --Grayish-purple: hsl(292, 16%, 49%);
+    --Dark-purple: hsl(292, 42%, 14%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+body {
+    background-color: var(--Light-pink);
+    width: 100vw;
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+
+}
+
+.mainImage {
+    width: 100vw;
+    /* display: none; */
+}
+
+.container {
+    height: 100vh;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBox {
+    /* position: absolute; */
+    background-color: white;
+    width:450px ;
+    /* top: 20%; */
+    /* left: 15%; */
+    padding: 25px;
+    border-radius: 10px;
+
+}
+
+#header {
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.faq {
+    font-size: 47px;
+    color: var(--Dark-purple);
+}
+
+.questionBar {
+    /* background-color: aliceblue; */
+    padding: 20px 0;
+    margin-bottom: 3px;
+    cursor: pointer;
+}
+
+.close {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--Dark-purple);
+}
+
+.close:hover {
+    color: rgb(183, 24, 183);
+    caret-color: black;
+}
+
+.minusIcon {
+    display: none;
+}
+
+.plusIcon {
+    /* display: none; */
+}
+
+.open {
+    display: none;
+    color: var(--Grayish-purple);
+    font-size: 14.5px;
+    line-height: 1.5;
+    /* background-color: bisque; */
+    margin-top: 15px;
+}
+
+
+@media only screen and (max-width: 500px) {
+    body {
+        background-image: url(./assets/images/background-pattern-mobile.svg) ;
+
+        background-size: contain;
+        /* width: 100vw; */
+
+        /* background-repeat: no-repeat; */
+    }
+
+    .mainBox {
+        width: 300px;
+        /* background-color: aqua; */
+    }
+}
